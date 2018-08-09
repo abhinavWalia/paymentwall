@@ -2,7 +2,6 @@
 import React,{Component} from 'react'; 
 import {map} from 'lodash';
 import config from '../../config/index';
-import '../styles/paymentmethod.scss';
 import { get } from 'lodash';
 
 class PaymentMode extends Component{

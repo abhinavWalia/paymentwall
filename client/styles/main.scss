@@ -1,0 +1,152 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+body {
+  padding: 10px;
+  background-color:#fff;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+$color-border: #CDCDCD;
+$color-label: darken($color-border, 20%);
+$color-primary: #1695A3;
+
+
+
+.country-section{ 
+  span{
+    font-family: bold;
+  }
+}
+
+.header-text{
+  color: grey;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.p-form{
+    border: 1px solid gray;
+    margin: 40px 0;
+   
+    form {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+   
+}
+
+.c-select{  
+    background-color: #afa7a738;
+    color: black;
+
+    .dropdown{
+      width: 30%;
+      margin: 30px;
+    }
+}
+
+.field {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+//*******Payment Form****//
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+  color: $color-label;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+input:not([type]) {
+  appearance: none;
+  border: 1px solid $color-border;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  width: 100%;
+  
+  &:focus {
+    outline: 2px solid $color-primary;
+  }
+}
+
+
+button {
+  appearance: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background: $color-primary;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &[type="reset"] {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    background: transparent;
+  }
+  
+  + button {
+    margin-left: 1rem;
+  }
+}
+
+.errors {
+  margin: 0.5rem 0;
+  color: red;
+  
+  > span {
+    display: block;
+    font-size: 0.8rem;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.payment-modes{
+
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  background-color:#afa7a738;
+
+
+  .payment-mode{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      span{
+          text-align: center;
+      }
+  }
+}
+
+//*******Payment Form****//
+
+
+
+
+
+
+
